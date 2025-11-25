@@ -4,64 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beyond The Bruise</title>
+
     <style>
+        /* -------------------- Global -------------------- */
         body {
             margin: 0;
             font-family: "Helvetica Neue", Arial, sans-serif;
-            background-color: #0f0f0f;
-            color: #f5f5f5;
-            line-height: 1.6;
+            background-color: #0b0b0b;
+            color: #f1f1f1;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
         }
+
+        a { color: inherit; }
+
+        /* -------------------- Hero Section -------------------- */
         header {
-            padding: 120px 20px;
+            padding: 160px 20px;
             text-align: center;
-            background: linear-gradient(to bottom, #1a1a1a, #0f0f0f);
+            background: radial-gradient(circle at center, #1a1a1a 0%, #0b0b0b 100%);
+            animation: fadeIn 1.4s ease forwards;
         }
+
         h1 {
-            font-size: 3.2rem;
-            letter-spacing: 1.5px;
-            margin-bottom: 10px;
+            font-size: 3.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
         }
+
         .logline {
-            font-size: 1.25rem;
-            max-width: 700px;
+            font-size: 1.3rem;
+            max-width: 760px;
             margin: 0 auto;
-            opacity: 0.8;
+            opacity: 0.85;
+            line-height: 1.65;
         }
+
+        /* -------------------- Section Layout -------------------- */
         section {
-            max-width: 850px;
-            margin: 60px auto;
-            padding: 0 25px;
+            max-width: 900px;
+            margin: 70px auto;
+            padding: 0 30px;
+            animation: fadeIn 1s ease forwards;
         }
+
         h2 {
-            font-size: 1.8rem;
-            margin-bottom: 12px;
-            border-left: 4px solid #d14f3f;
-            padding-left: 12px;
+            font-size: 2rem;
+            margin-bottom: 16px;
+            border-left: 5px solid #d14f3f;
+            padding-left: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
         }
-        .statement {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        .placeholder {
+
+        /* -------------------- Film Poster -------------------- */
+        .poster {
             width: 100%;
-            height: 420px;
-            background: #1c1c1c;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px dashed #555;
-            color: #999;
-            font-size: 1.2rem;
+            max-width: 900px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            border: 2px solid #333;
         }
+
+        /* -------------------- Statement Text -------------------- */
+        .statement {
+            font-size: 1.15rem;
+            opacity: 0.92;
+            margin-bottom: 22px;
+        }
+
+        /* -------------------- Footer -------------------- */
         footer {
             text-align: center;
-            padding: 40px 0;
-            opacity: 0.6;
-            font-size: 0.9rem;
+            padding: 55px 0 40px;
+            opacity: 0.55;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* -------------------- Subtle Animation -------------------- */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
+
 <body>
 
 <header>
@@ -75,22 +106,18 @@
 
 <section>
     <h2>Final Film</h2>
+
+    <!-- ⭐ Inserted Film Poster ⭐ -->
     <img 
         src="/mnt/data/Fuentes_Osborne_Torres_Tucker_Doc2_Poster_112425.jpg" 
         alt="Beyond the Bruise Poster"
-        style="
-            width: 100%;
-            max-width: 900px;
-            display: block;
-            margin: 0 auto;
-            border-radius: 8px;
-            border: 2px solid #333;
-        "
+        class="poster"
     >
 </section>
 
 <section>
     <h2>Artists’ Statement</h2>
+
     <p class="statement">
         <em>Beyond The Bruise</em> explores the world of Mathew Wagy, a former professional MMA fighter who 
         has transformed his experience inside the cage into a life centered around mentorship. His gym in 
@@ -113,4 +140,5 @@
 
 </body>
 </html>
+
 
