@@ -4,141 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beyond The Bruise</title>
-
     <style>
-        /* -------------------- Global -------------------- */
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            font-family: "Helvetica Neue", Arial, sans-serif;
-            background-color: #0b0b0b;
-            color: #f1f1f1;
-            line-height: 1.65;
-            -webkit-font-smoothing: antialiased;
+            padding: 0;
+            background: #f4f4f4;
+            color: #222;
         }
 
-        a { color: inherit; }
-
-        /* -------------------- Hero Section -------------------- */
         header {
-            padding: 160px 20px;
+            background: #222;
+            color: white;
+            padding: 20px;
             text-align: center;
-            background: radial-gradient(circle at center, #1a1a1a 0%, #0b0b0b 100%);
-            animation: fadeIn 1.4s ease forwards;
         }
 
-        h1 {
-            font-size: 3.8rem;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-            font-weight: 600;
-            text-transform: uppercase;
+        nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
         }
 
-        .logline {
-            font-size: 1.3rem;
-            max-width: 760px;
-            margin: 0 auto;
-            opacity: 0.85;
-            line-height: 1.65;
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
         }
 
-        /* -------------------- Section Layout -------------------- */
         section {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
             max-width: 900px;
-            margin: 70px auto;
-            padding: 0 30px;
-            animation: fadeIn 1s ease forwards;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
         h2 {
-            font-size: 2rem;
-            margin-bottom: 16px;
-            border-left: 5px solid #d14f3f;
-            padding-left: 14px;
-            font-weight: 500;
-            letter-spacing: 1px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
         }
 
-        /* -------------------- Film Poster -------------------- */
-        .poster {
+        iframe {
             width: 100%;
-            max-width: 900px;
-            display: block;
-            margin: 0 auto;
-            border-radius: 8px;
-            border: 2px solid #333;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
         }
 
-        /* -------------------- Statement Text -------------------- */
-        .statement {
-            font-size: 1.15rem;
-            opacity: 0.92;
-            margin-bottom: 22px;
-        }
-
-        /* -------------------- Footer -------------------- */
-        footer {
-            text-align: center;
-            padding: 55px 0 40px;
-            opacity: 0.55;
-            font-size: 0.95rem;
-            letter-spacing: 0.5px;
-        }
-
-        /* -------------------- Subtle Animation -------------------- */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            margin-top: 10px;
         }
     </style>
 </head>
-
 <body>
 
 <header>
     <h1>Beyond The Bruise</h1>
-    <p class="logline">
-        Mathew Wagy is an ex-professional MMA fighter and passionate coach in Deerfield Beach, Florida. 
-        He dedicates his days to pushing those who seek to rise in MMA, building an environment grounded 
-        in discipline, resilience, and relentless determination.
-    </p>
+    <p>Exploring the unseen struggles behind student-athletes' injuries</p>
 </header>
 
-<section>
+<nav>
+    <a href="#overview">Overview</a>
+    <a href="#final-film">Final Film</a>
+    <a href="#poster">Project Poster</a>
+    <a href="#team">Team</a>
+</nav>
+
+<section id="overview">
+    <h2>Project Overview</h2>
+    <p>
+        *Beyond The Bruise* is a look into the stories that student-athletes carry with them,
+        long after the injuries fade. This project highlights the emotional, academic, and social
+        impacts of sports injuries through personal interviews and documentary storytelling.
+    </p>
+</section>
+
+<section id="final-film">
     <h2>Final Film</h2>
+    <p>Watch our completed documentary below:</p>
 
-    <!-- ⭐ Inserted Film Poster ⭐ -->
-    <img 
-        src="/mnt/data/Fuentes_Osborne_Torres_Tucker_Doc2_Poster_112425.jpg" 
-        alt="Beyond the Bruise Poster"
-        class="poster"
-    >
+    <!-- Replace the link with your real YouTube link if needed -->
+    <iframe src="https://www.youtube.com/embed/xxxxxxxxxxx" allowfullscreen></iframe>
 </section>
 
-<section>
-    <h2>Artists’ Statement</h2>
+<!-- POSTER SECTION (your requested placement) -->
+<section id="poster">
+    <h2>Project Poster</h2>
+    <p>Our official research poster for the project:</p>
 
-    <p class="statement">
-        <em>Beyond The Bruise</em> explores the world of Mathew Wagy, a former professional MMA fighter who 
-        has transformed his experience inside the cage into a life centered around mentorship. His gym in 
-        Deerfield Beach serves as more than a training space—it is a sanctuary where ambition is sharpened, 
-        vulnerabilities are confronted, and perseverance is built through sweat and bruises. The documentary 
-        presents Mathew not as a fighter chasing past glory, but as a coach shaping the future of the sport.
-    </p>
-
-    <p class="statement">
-        This film aims to spotlight the emotional weight behind physical discipline. The minimalist aesthetic 
-        reflects the quiet intensity of Mathew’s approach: no theatrics, no spectacle—just raw commitment. 
-        Through intimate visuals and grounded storytelling, <em>Beyond The Bruise</em> seeks to honor the 
-        invisible battles behind every athlete’s journey and the mentors who guide them through it.
-    </p>
+    <!-- IMPORTANT:
+         Make sure you upload this file to your GitHub repository.
+         Place it in the SAME folder as this index.html file.
+    -->
+    <img src="Beyond_theBruise_Poster.jpg"
+         alt="Beyond The Bruise Project Poster">
 </section>
 
-<footer>
-    © 2025 Beyond The Bruise — Documentary Website
+<section id="team">
+    <h2>Meet The Team</h2>
+
+    <p><strong>Thomas Osborne</strong> — Videography & Editing</p>
+    <p><strong>[Other Team Member Names]</strong> — Research, interviews, production support</p>
+
+    <p>This project was created for academic purposes and represents the collective effort of the team.</p>
+</section>
+
+<footer style="text-align:center; padding:20px; background:#222; color:white;">
+    © 2025 Beyond The Bruise — All Rights Reserved
 </footer>
 
 </body>
 </html>
-
 
